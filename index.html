@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TestTask</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<section id="first" class="d-flex flex-column align-items-start">
+    <div class="heading">
+        <h1><span>Skincare</span> Trainingfor <br> Pharmacy </h1>
+        <div class="line"></div>
+        <img src="./assets/svg/johnsonLogo.svg" alt="">
+        <div class="timerCircle d-flex justify-content-center align-items-center">
+            <div class="left-mask"></div>
+            <div class="right-mask"></div>
+            <div class="indicator">
+            </div>
+            <div class="innerCircle  d-flex justify-content-center align-items-center">
+                <span class="d-flex flex-column"><span id="counter">0</span>mins</span>
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        <p>Dry and eczema-prone skin can have a significant impact on everything from self-esteem to work and family
+            life1, with <strong> eczema being one of the most common skin conditions</strong> for which people see a
+            GP1. In the UK, 1 in
+            5 children and 1 in 12 adults have <strong>atopic eczema2.</strong>
+            <br>
+            <br>
+            Fortunately, there is a range of options available in the pharmacy. The advice of pharmacists and their
+            staff can make all the difference to customers suffering with dry or itchy skin who are looking for products
+            that will work to <strong>moisturise</strong> and <strong>soothe their dry, itchy skin.</strong>
+        </p>
+    </div>
+    <!--<div class="items_wrapper">-->
+    <!--<img class="items left" src="./assets/svg/item_left.svg" alt="">-->
+    <!--<img src="./assets/1x/items_right.png" alt="" class="items right">-->
+    <!--</div>-->
+    <div class="items-wrapper d-flex justify-content-center align-items-center">
+        <img src="./assets/1x/items.png" class="items" alt="">
+    </div>
+    <img class="footer" src="./assets/svg/footer_first.svg" alt="">
+</section>
+<section id="second" class="d-flex align-items-center justify-content-center">
+    <div class="left-top d-flex justify-content-center align-items-center">
+        <img src="./assets/1x/some-logo.png" alt="">
+        <p>Also suitable for people who may be prone to eczema. Accepted by the US National Eczema Association. The
+            National Eczema Association name and logo are trademarks of the US National Eczema Association to whom
+            Johnson & Johnson has paid a license fee.
+        </p>
+    </div>
+    <div class="text"><h1><span>NEW AVEENO®</span> <br> Dermexa range </h1>
+        <div class="line"></div>
+
+        <p>For complete emollient therapy, you can also recommend AVEENO® Dermexa Daily Emollient Body Wash to your
+            customers, to be used alongside AVEENO® Dermexa Daily Emollient Cream and Fast & Long-Lasting Balm
+            <strong>for
+                management of dry skin with an everyday product.</strong>
+        </p>
+        <p class="click">Click on the numbers below to find out more.</p>
+    </div>
+    <div class="items_wrapper">
+        <div class="circle first" onclick="sr.reveal(event.target.firstElementChild, {delay: 200, origin: 'right'});">1
+            <div class="hint right">
+                <div class="arrow"></div>
+                <p>Gently cleanses without drying</p>
+            </div>
+        </div>
+        <div class="circle second" onclick="sr.reveal(event.target.firstElementChild, {delay: 200, origin: 'left'});">2
+            <div class="hint left">
+                <div class="arrow"></div>
+                <p>Soothes skin</p>
+            </div>
+        </div>
+        <div class="circle third" onclick="sr.reveal(event.target.firstElementChild, {delay: 200, origin: 'right'});">3
+            <div class="hint right">
+                <div class="arrow"></div>
+                <p>Leaves skin soft and moisturised</p>
+            </div>
+        </div>
+
+        <div class="circle fourth" onclick="sr.reveal(event.target.firstElementChild, {delay: 200, origin: 'left'});">4
+            <div class="hint left">
+                <div class="arrow"></div>
+                <p>Suitable for the whole family </p>
+            </div>
+        </div>
+        <div class="circle fifth" onclick="sr.reveal(event.target.firstElementChild, {delay: 200, origin: 'right'});">5
+            <div class="hint right">
+                <div class="arrow"></div>
+                <p>Also suitable for people who may be prone to eczema</p>
+            </div>
+        </div>
+        <img src="./assets/1x/items_second.png" class="items" alt="">
+    </div>
+    <img class="footer" src="./assets/svg/footer_second.svg" alt="">
+</section>
+<section id="third">
+    <div class="heading  ">
+        <h1><span>The AVEENO® </span>range</h1>
+        <div class="line"></div>
+        <p>With over 70 years of skincare expertise, the AVEENO® brand continues to act as a pioneer in the
+            discovery of naturally active <br> ingredients with real skincare benefits. The wider AVEENO® range,
+            formulated with active <strong>colloidal oatmeal and/or oat extracts,</strong> <br> offers a variety of
+            products for dry skin
+            needs.
+        </p>
+        <p class="click">Find out more about products in the range by clicking the arrows below.</p>
+    </div>
+    <div class="products w-100 row m-0">
+        <div class="product first col-4">
+            <div class="product-heading ">
+                <h2>Daily <span>moisture</span></h2>
+                <h3>Everyday dry skin</h3>
+            </div>
+            <div class="image">
+                <img src="./assets/1x/items-1.png" alt="">
+                <div class="click-circle" onclick="sr.reveal($('.content')[0], {delay: 200, origin: 'bottom'});">
+                    <div class="inner">
+                        <img src="./assets/svg/arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h3>AVEENO® Daily Moisturising range:</h3>
+                <ul>
+                    <li>
+                        Suitable for dry and sensitive skin
+                    </li>
+                    <li>
+                        Skin left feeling soft, smooth and healthy looking
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="product second col-4">
+            <div class="product-heading ">
+                <h2>Skin <span>ReliefVery</span></h2>
+                <h3>Very dry / irritable skin</h3>
+            </div>
+            <div class="image">
+                <img src="./assets/1x/items-2.png" alt="">
+                <div class="click-circle" onclick="sr.reveal($('.content')[1], {delay: 200, origin: 'bottom'});">
+                    <div class="inner">
+                        <img src="./assets/svg/arrow.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="content">
+                <h3>AVEENO® Skin Relief range:</h3>
+                <ul>
+                    <li>
+                        The Skin Relief Nourishing Lotion and Restoring Hand Cream contain an active triple oat complex
+                    </li>
+                    <li>
+                        Long lasting relief for very dry, uncomfortable skin
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="product third col-4">
+            <div class="product-heading ">
+                <h2><span>DERMEXA</span></h2>
+                <h3>Suitable for dry, itchy skin</h3>
+            </div>
+            <div class="image ">
+                <img src="./assets/1x/items-3.png" alt="">
+                <div class="click-circle" onclick="sr.reveal($('.content')[2], {delay: 200, origin: 'bottom'});">
+                    <div class="inner">
+                        <img src="./assets/svg/arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+
+
+                <h3> AVEENO® Dermexa Cream and Balm:</h3>
+                <ul>
+                    <li>
+                        Helps reduce flare-ups of very dry skin
+                    </li>
+                    <li>
+                        Suitable for the whole family
+                    </li>
+                    <li>
+                        Also suitable for people who may be prone to eczema
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <img class="footer" src="./assets/svg/footer_first.svg" alt="">
+</section>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/scrollreveal.js"></script>
+<script type="text/javascript" src="/js/jquery.scrollify.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
