@@ -148,9 +148,8 @@ body, html {
   overflow: visible;
 }
 #first .items-wrapper img.items {
-  margin-top: -10vh;
-  display: block;
-  width: 55%;
+  margin-top: -25px;
+  height: 350px;
 }
 #first img.footer {
   position: absolute;
